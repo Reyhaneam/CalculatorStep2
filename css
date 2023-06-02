@@ -337,3 +337,18 @@ div.result {
       grid-template-rows: repeat(6, 16.2%);
       column-gap: 2px;
   }
+.keyboard .re-hide{
+  display: none;
+}
+.re {
+  order: -4;
+}
+.re2 {
+  order: -3;
+}
+.re3 {
+  order: -2;
+}
+.re4 {
+  order: -1;
+}
