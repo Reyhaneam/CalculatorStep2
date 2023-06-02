@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <mate name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/style.css">
+    <title>calculator</title>
+        <meta name="author" content="Reyhane Amirnezhad">
+    </head>
+    <!-- < class="main"> -->
+    <body>
+        <div class="container">
+<!----------------head------------------>
+        <header>
+<div class="top_of_window">
+                <p>Calculator</p>
+            </div>
+          <div class="top_right_of_site">
+            <i class="min">&#8213 </i>
+            <i class="max">&#9723</i>
+            <i class="close">&#10005</i>
+          </div>
+    </header>
+        <!-- <header>
+            <div class="title">
+              <p>Calculator</p>
+            </div>
+            <div class="icons">
+              <i class="i fa fa-minus mini"></i>
+              <i class="i far fa-window-maximize max"></i>
+              <i class="fa fa-times close"></i>
+            </div>
+          </header> -->
+         <!----------------result------------------>
+        
+              <div class="result">
+              <div class="burger">
+                <span class="left-side">
+            <img src="data:image/png;base64,                                iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAATElEQVRYR+3TsQ0AMAgDQdh/aFIj0ZKn+AyQOCc7Az4Jvx8GUOCkQC0vo316EsADLAP06092QAEF8BniAeyAAgrgM8QD2AEFFPgq8ACF3gYho2IK1QAAAABJRU5ErkJggg"
+             alt="save-image">
+            <p>Standard</p> 
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFFmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNi4wLWMwMDIgNzkuMTY0NDYwLCAyMDIwLzA1LzEyLTE2OjA0OjE3ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgMjEuMiAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDIwLTEyLTE3VDE0OjA2OjQ2KzAzOjMwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAyMC0xMi0xN1QxNDoxMDozNyswMzozMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyMC0xMi0xN1QxNDoxMDozNyswMzozMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo5OGQ0NmQ4Mi1mZjA5LTliNGMtYjI1MS1iMzNmYWZlZDZiYTMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OThkNDZkODItZmYwOS05YjRjLWIyNTEtYjMzZmFmZWQ2YmEzIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6OThkNDZkODItZmYwOS05YjRjLWIyNTEtYjMzZmFmZWQ2YmEzIj4gPHhtcE1NOkhpc3Rvcnk+IDxyZGY6U2VxPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY3JlYXRlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDo5OGQ0NmQ4Mi1mZjA5LTliNGMtYjI1MS1iMzNmYWZlZDZiYTMiIHN0RXZ0OndoZW49IjIwMjAtMTItMTdUMTQ6MDY6NDYrMDM6MzAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCAyMS4yIChXaW5kb3dzKSIvPiA8L3JkZjpTZXE+IDwveG1wTU06SGlzdG9yeT4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4sht1OAAAB8ElEQVQ4jX2TPWsUURSGn5kdYxKUBMWEcyMSDUQyojYKVtYpZBFb2y38Q3Zb2Iidv2AaIWCvMhCRIFHfIWr8iLqb7EeuxZxhF0UPXC73fL/vOTeRdA14C4yBFBgwkZbrh25ruX4JGAGzGfDalSeBDJjzdwIcAxE49HsMnACWgfeNU/SA6AGJV/uvSLoCjDJ/bALbU12sA4QQnkq6Abzxtj8BmyGEJ02RzBO+Aj46xhnXL7vthXf1zaHsur4PpE2rV739kZ9tDwK4DawAZ4EzwE/XD4GZTNJ5r54B57z9ESCHUfyDhnmglwFfmbDfB1569YGkO8AC8N0DDoC1EMJDh9vLgNMhhHfU45lm+brDegZ8Bk45kc+BJsEwNbM9SfOSLhVFwerqapOjBLbM7IOZHZnZvpN40e0jgLSqqhawUpblTqfTodvtNglSoPcH7hb1qBsSyYBbZVluefBhnucPgEfUY4xVVR0Av5yjm9S7gMMjnQomz/N7wGN36AN71H9jg3rU+8Blt0egT7vdjkVRREn3Jc1KyiTdjTEiackd/zqSLkhKEkkbTsiRV+0743PUy5O5rZEB9egrM4uJpAXq+aZMPlP0OwEWqXeh50mH7v+jYXqdekUxswhEM4tmdmxmY+CLme04H7vUW7sIrJlZ/A3O+8lnhAGdIAAAAABJRU5ErkJggg=="
+                class="save_pic" alt="save-image">
+                </span>
+                <span class="right-side">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABa0lEQVR4nN2VTU4CQRCFv6DgQmUniVdQbqErF4rRsPAGGgmih1B2nsG/hVdxJ6j4s9AjGExUYmhTySNpyUxPo3HDSyoEXtV8Q01XDYy7poAt4BJ4Bt6BN6ADXABVoBB7saOh7xvAC+Ay4glYjwE4QXLAsXeBFrAPlIEiMA0sAnV5g7ymaoMAiyt9fgB7wESgxrxd4NODZAIsvoCVQM6wljxIJQYwaFcswFST9wjkkxJcBMQFANautvxNfikXAJga8s/+C1CW3/kroJTiz8rvJpldmZaUppY3G0mQovzXpOJ7mQsBwBxwrbw7YH6UFp3LtOEKqeT9k50h70C/nyQVVmW2M6Z3ANnmp6zmJnRMC1pcTuM/quqqfUgbNLQVncbexj9Wy0AP6AOrWclND1LLaNek7rynmsOYu8l5EKdn0tAJmVGUtcIHPe97qz5aFS2urBeO9XyNXyqvE2G7xc69DaPFLXAqL/WBjoe+AcuEihL3lBSEAAAAAElFTkSuQmCC" />
+                  </span>
+            </div>
+        
+
+                <p class="result_text">0</p>
+               <div class="cal_option">
+                <div class="disabled">MC</div>
+                <div class="disabled">MR</div>
+                <div class="abled">M+</div>
+                <div class="abled">M-</div>
+                <div class="abled">MS</div>
+               </div>
+              </div>
+          <!----------------history------------------>
+          <div class="history">
+                <h4 class="under-line">History</h4>
+                <h4>Memory</h4>
+                <p>There's no history yet</p>
+            </div>
+          
+        
+<!----------------keyboard------------------>
+<div class="keyboard">
+    <button class="calOperator re1">%</button>
+    <button class="calOperator">CE</button>
+    <button class="calOperator">C</button>
+    <button class="calOperator" id="backspace">&#9003</button>
+    <button class="calOperator" id="divide">&#xf7</button>
+    
+    <button class="calOperator re2">√</button>
+    <button class="calNumber">7</button>
+    <button class="calNumber">8</button>
+    <button class="calNumber">9</button>
+    <button class="calOperator">&#10005</button>
+    
+    <button class="calOperator re2">&#120013&#178</button>
+    <button class="calNumber">4</button>
+    <button class="calNumber">5</button>
+    <button class="calNumber">6</button>
+    <button class="calOperator" id="mines">_</button>
+    
+    <button class="calOperator re-hide">&#120013&#179</button>
+    <button class="calNumber re1">1</button>
+    <button class="calNumber">2</button>
+    <button class="calNumber">3</button>
+    <button class="calOperator">+</button>
+    
+    <button class="calOperator re4">&#185/&#120013</button>
+    <button class="calOperator re1"><img class="icon" src="images\plusminus.png" alt="+/-"/></button> 
+    <button class="calNumber">0</button>
+    <button class="calOperator"  id="point">.</button>
+    <button class="calOperator">=</button>
+</div>
+</div>
+
+</body>
+</html>
