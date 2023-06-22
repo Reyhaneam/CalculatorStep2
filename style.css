@@ -1,4 +1,4 @@
-style*,
+*,
 body {
 margin: 0;
   padding: 0;
@@ -241,7 +241,42 @@ div.result {
 #mines {
   font-size: x-large;
 }  */
- @media screen and (max-width: 1024px) {
+@media screen and (max-width : 450px) {
+  .container{
+    grid-template-columns: minmax(57%,auto) minmax(43%, 320px);
+    grid-template-areas: 
+    "header"
+    "result"
+    "keyboard"
+    ;
+} 
+  .makhf{
+    display: flex !important;
+
+}
+  .history {
+      display: none;
+  }
+  .container{
+      grid-template-columns: minmax(100%,300px);
+     
+  }
+}
+@media screen and (min-width : 740px) {
+  
+  .container{
+   grid-template-columns: auto 320px;
+ }
+ 
+ right-side img {
+   display: flex;
+   opacity: 0.5;
+ }
+ .burger .left-side p + img{
+   display: none;
+ }
+}
+ @media screen and (max-width: 1024px) and (min-height: 620px) {
   .keyboard {
       height: 100%;
       display: grid;
@@ -265,82 +300,3 @@ div.result {
     order: -1;
   }
 }
- @media screen and (max-width : 740px) {
-  
-   .container{
-      grid-template-columns: minmax(53%,auto) minmax(38%,320px);
-  }
-  
-} 
-
-@media screen and (max-width : 500px) {
-  .makhf{
-    display: flex !important;
-
-}
-  .history {
-      display: none;
-  }
-  .container{
-      grid-template-columns: minmax(100%,300px);
-     
-  }
-   .container{
-      grid-template-areas: 
-      "header"
-      "result"
-      "keyboard"
-      ;
-  } }
-  
-  right-side img {
-    display: flex;
-    opacity: 0.5;
-  }
-  .burger .left-side p + img{
-    display: none;
-  }
- @media screen and (max-height : 600px) {
-  .keyboard {
-      height: 100%;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(6, 16.7%);
-      column-gap: 2px; 
-  }
-  
-.keyboard .re-hide{
-  display: none;
-}
-.re {
-  order: -4;
-}
-.re2 {
-  order: -3;
-}
-.re3 {
-  order: -2;
-}
-.re4 {
-  order: -1;
-}
- 
-@media screen and (max-height : 450px) {
-
-.keyboard .re-hide{
-  display: none;
-}
-.re {
-  order: -4;
-}
-.re2 {
-  order: -3;
-}
-.re3 {
-  order: -2;
-}
-.re4 {
-  order: -1;
-}
-}
- }
